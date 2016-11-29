@@ -43,9 +43,9 @@ namespace Opos_Utility
         public CDP()
         {
             InitializeComponent();
-            
-            axOPOSLineDisplay1.CreateControl();
-            
+            axOPOSLineDisplay1.Location = new System.Drawing.Point(0, 0);
+
+            this.Controls.Add(axOPOSLineDisplay1);
 
             rkey_cdp = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\OLEforRetail\ServiceOPOS\LineDisplay").GetValueNames();
             rkey_cdp_sub = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\OLEforRetail\ServiceOPOS\LineDisplay").GetSubKeyNames();
@@ -239,7 +239,19 @@ namespace Opos_Utility
 
         private void display_single_Click(object sender, EventArgs e)
         {
-            axOPOSLineDisplay1.DisplayText(display_single.Text, 0);
+            axOPOSLineDisplay1.DisplayText(singleText.Text, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            axOPOSLineDisplay1.DisplayText(firstLineText.Text + secondLineText.Text, 0);
+        }
+
+        private void clearText_btn_Click(object sender, EventArgs e)
+        {
+            singleText.Clear();
+            firstLineText.Clear();
+            secondLineText.Clear();
         }
     }
 }

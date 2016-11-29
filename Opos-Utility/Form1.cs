@@ -47,7 +47,7 @@ namespace Opos_Utility
 
 
             child1.Parent = this.panel1;
-
+            child1.Dock = DockStyle.Fill;
             child2.Parent = this.panel1;
             child2.Dock = DockStyle.Fill;
 

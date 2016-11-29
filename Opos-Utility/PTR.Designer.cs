@@ -56,8 +56,8 @@
             this.dDisable_btn = new System.Windows.Forms.Button();
             this.dRelease_btn = new System.Windows.Forms.Button();
             this.dClose_btn = new System.Windows.Forms.Button();
-            this.axOPOSPOSPrinter1 = new AxOposPOSPrinter_1_5_Lib.AxOPOSPOSPrinter();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.axOPOSPOSPrinter1 = new AxOposPOSPrinter_1_5_Lib.AxOPOSPOSPrinter();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.simpleModeGroup.SuspendLayout();
@@ -389,18 +389,19 @@
             this.dClose_btn.UseVisualStyleBackColor = false;
             this.dClose_btn.Click += new System.EventHandler(this.detail_btn_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // axOPOSPOSPrinter1
             // 
+            this.axOPOSPOSPrinter1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.axOPOSPOSPrinter1.Enabled = true;
             this.axOPOSPOSPrinter1.Location = new System.Drawing.Point(0, 0);
             this.axOPOSPOSPrinter1.Name = "axOPOSPOSPrinter1";
             this.axOPOSPOSPrinter1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axOPOSPOSPrinter1.OcxState")));
             this.axOPOSPOSPrinter1.Size = new System.Drawing.Size(0, 0);
-            this.axOPOSPOSPrinter1.TabIndex = 14;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.axOPOSPOSPrinter1.TabIndex = 11;
             // 
             // PTR
             // 
@@ -408,6 +409,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(575, 549);
+            this.Controls.Add(this.axOPOSPOSPrinter1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Name = "PTR";
@@ -448,10 +450,11 @@
         private System.Windows.Forms.ComboBox device_name;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private AxOposPOSPrinter_1_5_Lib.AxOPOSPOSPrinter axOPOSPOSPrinter1;
+
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.GroupBox detailModeGroup;
         private System.Windows.Forms.GroupBox simpleModeGroup;
         private System.Windows.Forms.TextBox textBox24;
+        private AxOposPOSPrinter_1_5_Lib.AxOPOSPOSPrinter axOPOSPOSPrinter1;
     }
 }

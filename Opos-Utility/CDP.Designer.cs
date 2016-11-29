@@ -51,20 +51,20 @@
             this.dClose_btn = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.clearText_btn = new System.Windows.Forms.Button();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.secondLineText = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.firstLineText = new System.Windows.Forms.TextBox();
             this.display_returnCode = new System.Windows.Forms.TextBox();
             this.display_single = new System.Windows.Forms.Button();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.singleText = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
-            this.axOPOSLineDisplay1 = new AxOposLineDisplay_1_5_Lib.AxOPOSLineDisplay();
+            this.axOPOSLineDisplay1 = new AxOposLineDisplay_CCO.AxOPOSLineDisplay();
             this.groupBox2.SuspendLayout();
             this.simpleModeGroup.SuspendLayout();
             this.detailModeGroup.SuspendLayout();
@@ -315,21 +315,21 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox3.Controls.Add(this.axOPOSLineDisplay1);
             this.groupBox3.Controls.Add(this.textBox15);
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.clearText_btn);
             this.groupBox3.Controls.Add(this.textBox16);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.textBox17);
-            this.groupBox3.Controls.Add(this.textBox18);
+            this.groupBox3.Controls.Add(this.secondLineText);
             this.groupBox3.Controls.Add(this.textBox19);
-            this.groupBox3.Controls.Add(this.textBox20);
+            this.groupBox3.Controls.Add(this.firstLineText);
             this.groupBox3.Controls.Add(this.display_returnCode);
             this.groupBox3.Controls.Add(this.display_single);
             this.groupBox3.Controls.Add(this.textBox21);
             this.groupBox3.Controls.Add(this.singleText);
             this.groupBox3.Controls.Add(this.textBox23);
             this.groupBox3.Controls.Add(this.textBox24);
+            this.groupBox3.Controls.Add(this.axOPOSLineDisplay1);
             this.groupBox3.Location = new System.Drawing.Point(270, 0);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(293, 539);
@@ -345,16 +345,17 @@
             this.textBox15.Size = new System.Drawing.Size(161, 21);
             this.textBox15.TabIndex = 55;
             // 
-            // button2
+            // clearText_btn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(6, 482);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 35);
-            this.button2.TabIndex = 56;
-            this.button2.Text = "Clear Text";
-            this.button2.UseVisualStyleBackColor = false;
+            this.clearText_btn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.clearText_btn.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearText_btn.Location = new System.Drawing.Point(6, 482);
+            this.clearText_btn.Name = "clearText_btn";
+            this.clearText_btn.Size = new System.Drawing.Size(120, 35);
+            this.clearText_btn.TabIndex = 56;
+            this.clearText_btn.Text = "Clear Text";
+            this.clearText_btn.UseVisualStyleBackColor = false;
+            this.clearText_btn.Click += new System.EventHandler(this.clearText_btn_Click);
             // 
             // textBox16
             // 
@@ -375,6 +376,7 @@
             this.button1.TabIndex = 54;
             this.button1.Text = "Display (2L)";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox17
             // 
@@ -387,12 +389,13 @@
             this.textBox17.Text = "Line 2";
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox18
+            // secondLineText
             // 
-            this.textBox18.Location = new System.Drawing.Point(85, 361);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(202, 21);
-            this.textBox18.TabIndex = 51;
+            this.secondLineText.Location = new System.Drawing.Point(85, 361);
+            this.secondLineText.Name = "secondLineText";
+            this.secondLineText.Size = new System.Drawing.Size(202, 21);
+            this.secondLineText.TabIndex = 51;
+            this.secondLineText.Text = "happy cristmas to me";
             // 
             // textBox19
             // 
@@ -405,12 +408,13 @@
             this.textBox19.Text = "Line 1";
             this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox20
+            // firstLineText
             // 
-            this.textBox20.Location = new System.Drawing.Point(85, 331);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(202, 21);
-            this.textBox20.TabIndex = 49;
+            this.firstLineText.Location = new System.Drawing.Point(85, 331);
+            this.firstLineText.Name = "firstLineText";
+            this.firstLineText.Size = new System.Drawing.Size(202, 21);
+            this.firstLineText.TabIndex = 49;
+            this.firstLineText.Text = "hi valcretec happy !";
             // 
             // display_returnCode
             // 
@@ -482,11 +486,11 @@
             // 
             this.axOPOSLineDisplay1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.axOPOSLineDisplay1.Enabled = true;
-            this.axOPOSLineDisplay1.Location = new System.Drawing.Point(0, 0);
+            this.axOPOSLineDisplay1.Location = new System.Drawing.Point(3, 344);
             this.axOPOSLineDisplay1.Name = "axOPOSLineDisplay1";
             this.axOPOSLineDisplay1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axOPOSLineDisplay1.OcxState")));
-            this.axOPOSLineDisplay1.Size = new System.Drawing.Size(0, 0);
-            this.axOPOSLineDisplay1.TabIndex = 57;
+            this.axOPOSLineDisplay1.Size = new System.Drawing.Size(287, 192);
+            this.axOPOSLineDisplay1.TabIndex = 12;
             // 
             // CDP
             // 
@@ -532,19 +536,19 @@
         private System.Windows.Forms.Button dRelease_btn;
         private System.Windows.Forms.Button dClose_btn;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button clearText_btn;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox secondLineText;
         private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox firstLineText;
         private System.Windows.Forms.TextBox display_returnCode;
         private System.Windows.Forms.Button display_single;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TextBox singleText;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.TextBox textBox24;
-        private AxOposLineDisplay_1_5_Lib.AxOPOSLineDisplay axOPOSLineDisplay1;
+        private AxOposLineDisplay_CCO.AxOPOSLineDisplay axOPOSLineDisplay1;
     }
 }

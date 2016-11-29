@@ -141,8 +141,16 @@
     <None Include="scanner.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="AxOposLineDisplay_1_5_Lib">
+    <COMReference Include="AxOposLineDisplay_CCO">
       <Guid>{CCB90100-B81E-11D2-AB74-0040054C3719}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxOposMSR_CCO">
+      <Guid>{CCB90120-B81E-11D2-AB74-0040054C3719}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
@@ -157,8 +165,17 @@
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
     </COMReference>
-    <COMReference Include="OposLineDisplay_1_5_Lib">
+    <COMReference Include="OposLineDisplay_CCO">
       <Guid>{CCB90100-B81E-11D2-AB74-0040054C3719}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="OposMSR_CCO">
+      <Guid>{CCB90120-B81E-11D2-AB74-0040054C3719}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
