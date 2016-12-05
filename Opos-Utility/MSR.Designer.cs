@@ -30,8 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MSR));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.expirationDate_tb = new System.Windows.Forms.TextBox();
+            this.firstName_tb = new System.Windows.Forms.TextBox();
+            this.surName_tb = new System.Windows.Forms.TextBox();
+            this.cardNum_tb = new System.Windows.Forms.TextBox();
+            this.track3_tb = new System.Windows.Forms.TextBox();
+            this.track2_tb = new System.Windows.Forms.TextBox();
+            this.track1_tb = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.axOPOSMSR1 = new AxOposMSR_CCO.AxOPOSMSR();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.simpleModeGroup = new System.Windows.Forms.GroupBox();
             this.sClose_btn = new System.Windows.Forms.Button();
             this.sOpen_btn = new System.Windows.Forms.Button();
@@ -50,27 +65,12 @@
             this.dDisable_btn = new System.Windows.Forms.Button();
             this.dRelease_btn = new System.Windows.Forms.Button();
             this.dClose_btn = new System.Windows.Forms.Button();
-            this.axOPOSMSR1 = new AxOposMSR_CCO.AxOPOSMSR();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.track1_tb = new System.Windows.Forms.TextBox();
-            this.track2_tb = new System.Windows.Forms.TextBox();
-            this.track3_tb = new System.Windows.Forms.TextBox();
-            this.cardNum_tb = new System.Windows.Forms.TextBox();
-            this.surName_tb = new System.Windows.Forms.TextBox();
-            this.firstName_tb = new System.Windows.Forms.TextBox();
-            this.expirationDate_tb = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axOPOSMSR1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.simpleModeGroup.SuspendLayout();
             this.detailModeGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axOPOSMSR1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -98,6 +98,158 @@
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(6, 348);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 12);
+            this.label4.TabIndex = 66;
+            this.label4.Text = "Expiration Date";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(6, 302);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 12);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "First Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(6, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 12);
+            this.label2.TabIndex = 64;
+            this.label2.Text = "Sur Name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(4, 211);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 12);
+            this.label1.TabIndex = 63;
+            this.label1.Text = "Card Num";
+            // 
+            // expirationDate_tb
+            // 
+            this.expirationDate_tb.Location = new System.Drawing.Point(6, 363);
+            this.expirationDate_tb.Name = "expirationDate_tb";
+            this.expirationDate_tb.Size = new System.Drawing.Size(170, 21);
+            this.expirationDate_tb.TabIndex = 62;
+            // 
+            // firstName_tb
+            // 
+            this.firstName_tb.Location = new System.Drawing.Point(6, 317);
+            this.firstName_tb.Name = "firstName_tb";
+            this.firstName_tb.Size = new System.Drawing.Size(170, 21);
+            this.firstName_tb.TabIndex = 61;
+            // 
+            // surName_tb
+            // 
+            this.surName_tb.Location = new System.Drawing.Point(6, 269);
+            this.surName_tb.Name = "surName_tb";
+            this.surName_tb.Size = new System.Drawing.Size(170, 21);
+            this.surName_tb.TabIndex = 60;
+            // 
+            // cardNum_tb
+            // 
+            this.cardNum_tb.Location = new System.Drawing.Point(6, 226);
+            this.cardNum_tb.Name = "cardNum_tb";
+            this.cardNum_tb.Size = new System.Drawing.Size(170, 21);
+            this.cardNum_tb.TabIndex = 59;
+            // 
+            // track3_tb
+            // 
+            this.track3_tb.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.track3_tb.Location = new System.Drawing.Point(22, 157);
+            this.track3_tb.Name = "track3_tb";
+            this.track3_tb.Size = new System.Drawing.Size(263, 22);
+            this.track3_tb.TabIndex = 58;
+            this.track3_tb.MouseClick += new System.Windows.Forms.MouseEventHandler(this.track_tb_MouseClick);
+            // 
+            // track2_tb
+            // 
+            this.track2_tb.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.track2_tb.Location = new System.Drawing.Point(22, 129);
+            this.track2_tb.Name = "track2_tb";
+            this.track2_tb.Size = new System.Drawing.Size(263, 22);
+            this.track2_tb.TabIndex = 57;
+            this.track2_tb.MouseClick += new System.Windows.Forms.MouseEventHandler(this.track_tb_MouseClick);
+            // 
+            // track1_tb
+            // 
+            this.track1_tb.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.track1_tb.Location = new System.Drawing.Point(22, 101);
+            this.track1_tb.Name = "track1_tb";
+            this.track1_tb.Size = new System.Drawing.Size(263, 22);
+            this.track1_tb.TabIndex = 56;
+            this.track1_tb.MouseClick += new System.Windows.Forms.MouseEventHandler(this.track_tb_MouseClick);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBox5.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox5.Location = new System.Drawing.Point(6, 129);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(17, 22);
+            this.textBox5.TabIndex = 55;
+            this.textBox5.Text = "2";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBox4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox4.Location = new System.Drawing.Point(6, 157);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(17, 22);
+            this.textBox4.TabIndex = 54;
+            this.textBox4.Text = "3";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBox3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox3.Location = new System.Drawing.Point(6, 101);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(17, 22);
+            this.textBox3.TabIndex = 53;
+            this.textBox3.Text = "1";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox24
+            // 
+            this.textBox24.BackColor = System.Drawing.SystemColors.Highlight;
+            this.textBox24.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox24.Location = new System.Drawing.Point(6, 20);
+            this.textBox24.Multiline = true;
+            this.textBox24.Name = "textBox24";
+            this.textBox24.ReadOnly = true;
+            this.textBox24.Size = new System.Drawing.Size(281, 75);
+            this.textBox24.TabIndex = 52;
+            this.textBox24.Text = "MSR data\r\nTracks";
+            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // axOPOSMSR1
+            // 
+            this.axOPOSMSR1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.axOPOSMSR1.Enabled = true;
+            this.axOPOSMSR1.Location = new System.Drawing.Point(3, 344);
+            this.axOPOSMSR1.Name = "axOPOSMSR1";
+            this.axOPOSMSR1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axOPOSMSR1.OcxState")));
+            this.axOPOSMSR1.Size = new System.Drawing.Size(287, 192);
+            this.axOPOSMSR1.TabIndex = 51;
+            this.axOPOSMSR1.DataEvent += new AxOposMSR_CCO._IOPOSMSREvents_DataEventEventHandler(this.axOPOSMSR1_DataEvent);
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
@@ -117,19 +269,6 @@
             this.groupBox2.Size = new System.Drawing.Size(252, 539);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(7, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(234, 87);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "MSR";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // simpleModeGroup
             // 
@@ -258,6 +397,7 @@
             this.detailModeGroup.Size = new System.Drawing.Size(103, 363);
             this.detailModeGroup.TabIndex = 49;
             this.detailModeGroup.TabStop = false;
+    
             // 
             // dOpen_btn
             // 
@@ -338,157 +478,18 @@
             this.dClose_btn.UseVisualStyleBackColor = false;
             this.dClose_btn.Click += new System.EventHandler(this.detail_btn_Click);
             // 
-            // axOPOSMSR1
+            // textBox1
             // 
-            this.axOPOSMSR1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.axOPOSMSR1.Enabled = true;
-            this.axOPOSMSR1.Location = new System.Drawing.Point(3, 344);
-            this.axOPOSMSR1.Name = "axOPOSMSR1";
-            this.axOPOSMSR1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axOPOSMSR1.OcxState")));
-            this.axOPOSMSR1.Size = new System.Drawing.Size(287, 192);
-            this.axOPOSMSR1.TabIndex = 51;
-            this.axOPOSMSR1.DataEvent += new AxOposMSR_CCO._IOPOSMSREvents_DataEventEventHandler(this.axOPOSMSR1_DataEvent);
-            // 
-            // textBox24
-            // 
-            this.textBox24.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBox24.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(6, 20);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(281, 75);
-            this.textBox24.TabIndex = 52;
-            this.textBox24.Text = "MSR data\r\nTracks";
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBox3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox3.Location = new System.Drawing.Point(6, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(17, 22);
-            this.textBox3.TabIndex = 53;
-            this.textBox3.Text = "1";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBox4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox4.Location = new System.Drawing.Point(6, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(17, 22);
-            this.textBox4.TabIndex = 54;
-            this.textBox4.Text = "3";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.textBox5.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox5.Location = new System.Drawing.Point(6, 129);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(17, 22);
-            this.textBox5.TabIndex = 55;
-            this.textBox5.Text = "2";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // track1_tb
-            // 
-            this.track1_tb.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.track1_tb.Location = new System.Drawing.Point(22, 101);
-            this.track1_tb.Name = "track1_tb";
-            this.track1_tb.Size = new System.Drawing.Size(263, 22);
-            this.track1_tb.TabIndex = 56;
-            this.track1_tb.MouseClick += new System.Windows.Forms.MouseEventHandler(this.track_tb_MouseClick);
-            // 
-            // track2_tb
-            // 
-            this.track2_tb.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.track2_tb.Location = new System.Drawing.Point(22, 129);
-            this.track2_tb.Name = "track2_tb";
-            this.track2_tb.Size = new System.Drawing.Size(263, 22);
-            this.track2_tb.TabIndex = 57;
-            this.track2_tb.MouseClick += new System.Windows.Forms.MouseEventHandler(this.track_tb_MouseClick);
-            // 
-            // track3_tb
-            // 
-            this.track3_tb.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.track3_tb.Location = new System.Drawing.Point(22, 157);
-            this.track3_tb.Name = "track3_tb";
-            this.track3_tb.Size = new System.Drawing.Size(263, 22);
-            this.track3_tb.TabIndex = 58;
-            this.track3_tb.MouseClick += new System.Windows.Forms.MouseEventHandler(this.track_tb_MouseClick);
-            // 
-            // cardNum_tb
-            // 
-            this.cardNum_tb.Location = new System.Drawing.Point(6, 226);
-            this.cardNum_tb.Name = "cardNum_tb";
-            this.cardNum_tb.Size = new System.Drawing.Size(170, 21);
-            this.cardNum_tb.TabIndex = 59;
-            // 
-            // surName_tb
-            // 
-            this.surName_tb.Location = new System.Drawing.Point(6, 269);
-            this.surName_tb.Name = "surName_tb";
-            this.surName_tb.Size = new System.Drawing.Size(170, 21);
-            this.surName_tb.TabIndex = 60;
-            // 
-            // firstName_tb
-            // 
-            this.firstName_tb.Location = new System.Drawing.Point(6, 317);
-            this.firstName_tb.Name = "firstName_tb";
-            this.firstName_tb.Size = new System.Drawing.Size(170, 21);
-            this.firstName_tb.TabIndex = 61;
-            // 
-            // expirationDate_tb
-            // 
-            this.expirationDate_tb.Location = new System.Drawing.Point(6, 363);
-            this.expirationDate_tb.Name = "expirationDate_tb";
-            this.expirationDate_tb.Size = new System.Drawing.Size(170, 21);
-            this.expirationDate_tb.TabIndex = 62;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(4, 211);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 12);
-            this.label1.TabIndex = 63;
-            this.label1.Text = "Card Num";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(6, 254);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 12);
-            this.label2.TabIndex = 64;
-            this.label2.Text = "Sur Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(6, 302);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 12);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "First Name";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(6, 348);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 12);
-            this.label4.TabIndex = 66;
-            this.label4.Text = "Expiration Date";
+            this.textBox1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.textBox1.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(7, 20);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(234, 87);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "MSR";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MSR
             // 
@@ -501,11 +502,11 @@
             this.Text = "MSR";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axOPOSMSR1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.simpleModeGroup.ResumeLayout(false);
             this.detailModeGroup.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axOPOSMSR1)).EndInit();
             this.ResumeLayout(false);
 
         }

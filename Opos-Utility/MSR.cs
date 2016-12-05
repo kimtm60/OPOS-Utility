@@ -250,6 +250,7 @@ namespace Opos_Utility
             }
         }
 
+
         private void clearReturnCode_btn_Click(object sender, EventArgs e)
         {
             open_returnCode.Text = "Return Code";

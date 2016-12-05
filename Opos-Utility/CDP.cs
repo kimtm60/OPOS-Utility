@@ -219,7 +219,7 @@ namespace Opos_Utility
                 detailModeGroup.Visible = true;
                 simpleModeGroup.Visible = false;
 
-            }
+            }                                                                                                                                                                      
         }
 
         private void clearReturnCode_btn_Click(object sender, EventArgs e)

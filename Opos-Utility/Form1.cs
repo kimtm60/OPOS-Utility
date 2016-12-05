@@ -52,9 +52,9 @@ namespace Opos_Utility
             child2.Dock = DockStyle.Fill;
 
             child3.Parent = this.panel1;
-
+            child3.Dock = DockStyle.Fill;
             child4.Parent = this.panel1;
-
+            child4.Dock = DockStyle.Fill;
 
 
             // 자식 폼의 타이틀을 없앤다 
